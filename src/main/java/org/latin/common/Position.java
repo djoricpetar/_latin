@@ -1,0 +1,16 @@
+package org.latin.common;
+
+/**
+ * Common to Nouns, Adjectives and Numbers
+ * 
+ * @author petarDj
+ *
+ */
+public enum Position {
+	NOMINATIVE_SINGULAR,	NOMINATIVE_PLURAL,
+	GENITIVE_SINGULAR,		GENITIVE_PLURAL,
+	DATIVE_SINGULAR,		DATIVE_PLURAL,
+	ACUSATIVE_SINGURAL,		ACUSATIVE_PLURAL,
+	VOCATIVE_SINGULAR,		VOCATIVE_PLURAL,
+	ABLATIVE_SINGULAR, 		ABLATIVE_PLURAL
+}

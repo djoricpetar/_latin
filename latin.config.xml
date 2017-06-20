@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<latin>
+	<declinations>
+		<!-- Noun Declinations -->
+		<!-- First declination sub groups -->
+		<declination class="org.latin.noun_declination.provider.Declination01a"/>
+		
+		<!-- Second declination sub groups -->
+		<declination class="org.latin.noun_declination.provider.Declination02a"/>
+		<declination class="org.latin.noun_declination.provider.Declination02b"/>
+		<declination class="org.latin.noun_declination.provider.Declination02c"/>
+		<declination class="org.latin.noun_declination.provider.Declination02d"/>
+		<declination class="org.latin.noun_declination.provider.Declination02e"/>
+		
+		<!-- Third declination sub groups -->
+		<declination class="org.latin.noun_declination.provider.Declination03a"/>
+		<declination class="org.latin.noun_declination.provider.Declination03b"/>
+		<declination class="org.latin.noun_declination.provider.Declination03c"/>
+		<declination class="org.latin.noun_declination.provider.Declination03d"/>
+		
+		<!-- Forth declination sub groups -->
+		<declination class="org.latin.noun_declination.provider.Declination04a"/>
+		<declination class="org.latin.noun_declination.provider.Declination04b"/>
+		
+		<!-- Fifth declination sub groups -->
+		<declination class="org.latin.noun_declination.provider.Declination05a"/>  
+		<declination class="org.latin.noun_declination.provider.Declination05b"/>
+		
+		<!-- Other noun declinations - support for adjectives -->
+		<declination class="org.latin.noun_declination.provider.DeclinationXXa"/>
+		<declination class="org.latin.noun_declination.provider.DeclinationXXb"/>
+		<declination class="org.latin.noun_declination.provider.DeclinationXXc"/>
+		<declination class="org.latin.noun_declination.provider.DeclinationXXd"/>
+		<declination class="org.latin.noun_declination.provider.DeclinationXXe"/>
+		<declination class="org.latin.noun_declination.provider.DeclinationXXf"/>
+		
+		
+		<!-- Adjective Declinations -->
+		<!-- First declination sub groups -->
+		<adjectiveDeclination class="org.latin.adjc_declination.provider.Declination01a"/>
+		
+		<!-- Second declination sub groups -->
+		<adjectiveDeclination class="org.latin.adjc_declination.provider.Declination02a"/>
+		<adjectiveDeclination class="org.latin.adjc_declination.provider.Declination02b"/>
+		
+		<!-- Third declination sub groups -->
+		<adjectiveDeclination class="org.latin.adjc_declination.provider.Declination03a"/>  
+		<adjectiveDeclination class="org.latin.adjc_declination.provider.Declination03b"/> 
+		<adjectiveDeclination class="org.latin.adjc_declination.provider.Declination03c"/> 
+		<adjectiveDeclination class="org.latin.adjc_declination.provider.Declination03d"/> 
+		
+		
+		<!-- Verb Conjugations -->
+		<conjugation class="org.latin.verb_conjugation.provider.Conjugation01"/>
+		<conjugation class="org.latin.verb_conjugation.provider.Conjugation02"/>
+		<conjugation class="org.latin.verb_conjugation.provider.Conjugation03a"/>
+		<conjugation class="org.latin.verb_conjugation.provider.Conjugation03b"/>
+		<conjugation class="org.latin.verb_conjugation.provider.Conjugation04"/>
+	</declinations>
+</latin>
+	
