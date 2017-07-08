@@ -17,8 +17,8 @@
     
   	<repositories>
 	    <repository>
-	        <id>Latin-mvn-repo</id>
-	        <url>https://github.com/djoricpetar/mvn-repo.git</url>
+	        <id>mvn-repo</id>
+	        <url>https://github.com/djoricpetar/mvn-repo/</url>
 	        <snapshots>
 	            <enabled>true</enabled>
 	            <updatePolicy>always</updatePolicy>
