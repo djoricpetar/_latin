@@ -18,7 +18,7 @@
   	<repositories>
 	    <repository>
 	        <id>logicwithoop1-mvn-repo</id>
-	        <url>https://github.com/djoricpetar/mvn-repo/logicwithoop1</url>
+	        <url>https://raw.github.com/djoricpetar/logicwithoop/mvn-repo/</url>
 	        <snapshots>
 	            <enabled>true</enabled>
 	            <updatePolicy>always</updatePolicy>
