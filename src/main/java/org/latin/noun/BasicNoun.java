@@ -3,6 +3,7 @@ package org.latin.noun;
 import org.latin.common.Gender;
 
 import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 
 /**
@@ -18,6 +19,7 @@ import lombok.Getter;
  */
 
 @AllArgsConstructor
+@EqualsAndHashCode 
 public final class BasicNoun  {
 	
 	private final @Getter String nominativeSingular;

@@ -1,6 +1,6 @@
 package org.latin.model;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 import org.junit.Ignore;
 import org.junit.Test;
@@ -8,6 +8,7 @@ import org.latin.common.Declination;
 import org.latin.common.Gender;
 import org.latin.common.Position;
 import org.latin.common.UnknownDeclination;
+import org.latin.noun.BasicNoun;
 import org.latin.noun.Noun;
 
 public class NounTest extends NounTests {
@@ -682,6 +683,24 @@ public class NounTest extends NounTests {
 				"miserum",	"misera",
 				"misero",	"miseris"
 		});
+	}
+	
+	// TESTING for equality 
+	@Test
+	public void whenSameFieldsThenBasicNounsEqualSuccess() { 
+		BasicNoun basicNoun1 = new BasicNoun("puealla", "puellae", Gender.F);
+		BasicNoun basicNoun2 = new BasicNoun("puealla", "puellae", Gender.F);
+
+		assertTrue(basicNoun1.equals(basicNoun2));
+	}
+	
+	// TESTING for equality 
+	@Test
+	public void whenDiffFieldsThenBasicNounsEqualSuccess() { 
+		BasicNoun basicNoun1 = new BasicNoun("pueallaa", "puellae", Gender.F);
+		BasicNoun basicNoun2 = new BasicNoun("puealla", "puellae", Gender.F);
+
+		assertFalse(basicNoun1.equals(basicNoun2));
 	}
 	
 }
