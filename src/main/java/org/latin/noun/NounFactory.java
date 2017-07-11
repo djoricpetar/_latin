@@ -26,7 +26,7 @@ public class NounFactory {
 		return buildFrom(new BasicNoun(nominativeSingularResult, genitiveSingularResult, gender, adjectiveClazz));
 	}
 	
-	private Noun buildFrom(BasicNoun basicNoun)  {		
+	public Noun buildFrom(BasicNoun basicNoun)  {		
 		NounSatisfier declination = (NounSatisfier) declinationResolver.resolveFrom(basicNoun)
 														.orElseThrow(UnknownDeclination::new);
 		declination.setBasicNoun(basicNoun);

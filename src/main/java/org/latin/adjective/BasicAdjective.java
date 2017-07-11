@@ -1,9 +1,12 @@
 package org.latin.adjective;
 
 import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 
 @AllArgsConstructor
+@EqualsAndHashCode
+// TODO add tests for basic adjective equality
 public class BasicAdjective {
 	
 	private @Getter String nominativeSingularMasculinum;
