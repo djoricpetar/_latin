@@ -26,7 +26,7 @@ import org.latin.verb.VerbFactory;
  * @author petarDj
  *
  */
-//@Ignore
+@Ignore
 public class ORMTest {
 
 	 private static SessionFactory factory; 

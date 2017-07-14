@@ -1,4 +1,4 @@
-package org.latin.model;
+package org.latin.selenium;
 
 import static org.junit.Assert.assertEquals;
 
@@ -14,6 +14,7 @@ import javax.xml.parsers.ParserConfigurationException;
 
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.latin.common.Gender;
 import org.latin.common.Position;
@@ -27,6 +28,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.xml.sax.SAXException;
 
+@Ignore
 public class NounLatinDictionaryOnlineTest {
 
 	private static WebDriver driver;
