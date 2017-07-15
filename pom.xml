@@ -12,7 +12,6 @@
 		<selenium.version>2.53.1</selenium.version>
 	    <!-- github server corresponds to entry in ~/.m2/settings.xml -->
 	    <github.global.server>github</github.global.server>
-   	 	<hibernate.version>5.2.10.Final</hibernate.version>
 	</properties>
   
     
@@ -62,21 +61,6 @@
 	    <artifactId>selenium-java</artifactId>
 	    <version>${selenium.version}</version>
 	</dependency>
-
-    <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
-	<dependency>
-	    <groupId>org.hibernate</groupId>
-	    <artifactId>hibernate-core</artifactId>
-	    <version>${hibernate.version}</version>
-	</dependency>
-    
-    <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
-	<dependency>
-	    <groupId>mysql</groupId>
-	    <artifactId>mysql-connector-java</artifactId>
-	    <version>5.1.36</version>
-	</dependency>
-
 
   </dependencies>
   

@@ -20,6 +20,6 @@ public class VerbFactory {
 														.orElseThrow(UnknownDeclination::new);
 		declination.setBasicVerb(basicVerb);
 		
-		return new Verb(basicVerb, declination.getPositions());
+		return new Verb(declination.createAdjective(), declination.getPositions());
 	}
 }

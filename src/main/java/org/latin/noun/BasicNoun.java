@@ -1,19 +1,10 @@
 package org.latin.noun;
 
-import java.io.Serializable;
-
-import javax.persistence.Column;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
-import javax.persistence.Transient;
-
 import org.latin.common.Gender;
 
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
 
 /**
  * Container for main Noun modifications :
@@ -27,33 +18,23 @@ import lombok.Setter;
  *
  */
 
-@NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode 
-public final class BasicNoun implements Serializable {
+public final class BasicNoun  {
 	
-	private static final long serialVersionUID = 1L;
-
-	private @Getter @Setter String nominativeSingular;
+	private final @Getter String nominativeSingular;
 	
-	private @Getter @Setter String genitiveSingular;
+	private final @Getter String genitiveSingular;
 	
-	@Enumerated(EnumType.STRING)
-	@Column(columnDefinition="CHARACTER(1)")
-	private @Getter @Setter Gender gender;
+	private final @Getter Gender gender;
 	
-	/**
-	 * If not null, tells that this basic noun is not created 
-	 * with 'regular' rules described in the book, but with
-	 * custom defined rules for nouns created during adjective creation
-	 */
-	@Transient
+	/* support for nouns created from adjectives */
 	private @Getter Class<?> adjectiveClassName;
 	
 	public BasicNoun(String nominativeSingular, String genitiveSingular, Gender gender) { 
 		this(nominativeSingular, genitiveSingular, gender, null);
 	}
-	
+
 	@Override
 	public String toString() {
 		return "(" + nominativeSingular + ", " + genitiveSingular + ", " + gender + ")";
