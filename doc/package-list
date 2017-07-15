@@ -1,0 +1,8 @@
+org.latin.adjc_declination.provider
+org.latin.adjective
+org.latin.common
+org.latin.noun
+org.latin.noun_declination.provider
+org.latin.properties.reader
+org.latin.verb
+org.latin.verb_conjugation.provider
