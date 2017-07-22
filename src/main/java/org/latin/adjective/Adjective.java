@@ -4,13 +4,16 @@ import org.latin.noun.Noun;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @AllArgsConstructor
+@NoArgsConstructor
 public class Adjective {
 	
-	private @Getter Noun adjectiveMasculinum;
+	protected @Getter @Setter Noun adjectiveMasculinum;
 	
-	private @Getter Noun adjectiveFemininum;
+	protected @Getter @Setter Noun adjectiveFemininum;
 	
-	private @Getter Noun adjectiveNeutrum;
+	protected @Getter @Setter Noun adjectiveNeutrum;
 }

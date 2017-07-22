@@ -5,6 +5,8 @@ import org.latin.common.Gender;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 /**
  * Container for main Noun modifications :
@@ -19,14 +21,15 @@ import lombok.Getter;
  */
 
 @AllArgsConstructor
+@NoArgsConstructor
 @EqualsAndHashCode 
-public final class BasicNoun  {
+public class BasicNoun  {
 	
-	private final @Getter String nominativeSingular;
+	protected @Getter @Setter String nominativeSingular;
 	
-	private final @Getter String genitiveSingular;
+	protected @Getter @Setter String genitiveSingular;
 	
-	private final @Getter Gender gender;
+	protected @Getter @Setter Gender gender;
 	
 	/* support for nouns created from adjectives */
 	private @Getter Class<?> adjectiveClassName;

@@ -3,17 +3,20 @@ package org.latin.adjective;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @AllArgsConstructor
+@NoArgsConstructor
 @EqualsAndHashCode
 // TODO add tests for basic adjective equality
 public class BasicAdjective {
 	
-	private @Getter String nominativeSingularMasculinum;
+	protected @Getter @Setter String nominativeSingularMasculinum;
 	
-	private @Getter String nominativeSingularFemininum;
+	protected @Getter @Setter String nominativeSingularFemininum;
 	
-	private @Getter String nominativeSingularNeutrum;
+	protected @Getter @Setter String nominativeSingularNeutrum;
 	
 	@Override
 	public String toString() { 

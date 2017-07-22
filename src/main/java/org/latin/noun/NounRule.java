@@ -10,5 +10,4 @@ public abstract class NounRule implements Rule {
 	protected final BasicNoun basicNoun;
 	
 	public abstract boolean accept(); 
-
 }

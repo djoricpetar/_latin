@@ -3,19 +3,22 @@ package org.latin.verb;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @AllArgsConstructor
+@NoArgsConstructor
 @EqualsAndHashCode
 // TODO add tests for basic verb equality
-public final class BasicVerb {
+public class BasicVerb {
 	
-	private final @Getter String firstPersonSingularPresent;
+	protected @Getter @Setter String firstPersonSingularPresent;
 	
-	private final @Getter String infinitive;
+	protected @Getter @Setter String infinitive;
 	
-	private final @Getter String firstPersonSingularPerfect;
+	protected @Getter @Setter String firstPersonSingularPerfect;
 	
-	private final @Getter String participPerfectPassive;
+	protected @Getter @Setter String participPerfectPassive;
 	
 	@Override 
 	public String toString() { 

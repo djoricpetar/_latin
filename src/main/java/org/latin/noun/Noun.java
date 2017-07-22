@@ -9,17 +9,20 @@ import org.logic_with_oop.Rule;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @AllArgsConstructor
+@NoArgsConstructor
 public class Noun {
 
-	private final @Getter Gender gender;
+	protected @Getter @Setter Gender gender;
 	
-	private final @Getter Declination declination;
+	protected @Getter @Setter Declination declination;
 
-	private final @Getter Rule rule;
+	protected @Getter @Setter Map<Position, String> positions;
 	
-	private Map<Position, String> positions;
+	private @Getter Rule rule;
 	
 	public String get(Position position) {	// TODO see lombok's functionality for this and update everywhere	
 		return positions.get(position);

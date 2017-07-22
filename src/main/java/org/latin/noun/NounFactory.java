@@ -31,7 +31,7 @@ public class NounFactory {
 														.orElseThrow(UnknownDeclination::new);
 		declination.setBasicNoun(basicNoun);
 		
-		return new Noun(basicNoun.getGender(), declination.pretty(), declination.getRule(), declination.getPositions());
+		return new Noun(basicNoun.getGender(), declination.pretty(), declination.getPositions(), declination.getRule());
 	}
 	
 	public BasicNoun buildFrom(Noun noun) { 

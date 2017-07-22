@@ -6,14 +6,18 @@ import org.latin.adjective.Adjective;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @AllArgsConstructor
-public final class Verb {
+@NoArgsConstructor
+public class Verb {
 
-	private final @Getter Adjective adjective;
+	private @Getter Adjective adjective;
 	
-	private final Map<Position, String> positions;
+	protected @Getter @Setter Map<Position, String> positions;
 	
-	public String get(Position position) { return positions.get(position); }
-	
+	public String get(Position position) { 
+		return positions.get(position); 
+	}
 }
