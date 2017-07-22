@@ -18,7 +18,7 @@
   	<repositories>
 	    <repository>
 	        <id>logicwithoop1-mvn-repo</id>
-	        <url>https://raw.github.com/djoricpetar/logicwithoop/mvn-repo/</url>
+	        <url>https://raw.github.com/djoricpetar/mvn-repo/logicwithoop/</url>
 	        <snapshots>
 	            <enabled>true</enabled>
 	            <updatePolicy>always</updatePolicy>
@@ -60,6 +60,21 @@
 	    <groupId>org.seleniumhq.selenium</groupId>
 	    <artifactId>selenium-java</artifactId>
 	    <version>${selenium.version}</version>
+	</dependency>
+
+	<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+	<dependency>
+	    <groupId>org.hibernate</groupId>
+	    <artifactId>hibernate-core</artifactId>
+	    <version>5.2.10.Final</version>
+	</dependency>
+
+    
+    <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+	<dependency>
+	    <groupId>mysql</groupId>
+	    <artifactId>mysql-connector-java</artifactId>
+	    <version>5.1.36</version>
 	</dependency>
 
   </dependencies>
